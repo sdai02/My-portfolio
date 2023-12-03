@@ -21,14 +21,14 @@
         </div>
         
     </nav>
-    <header class="body__header--off">
+    <header class="body__header--on">
         <span class="header__background">developer</span>
         <h1>Hello, I'm a Front end Developer   </h1>
         <span></span>
     </header>
 
     <main>
-        <div class="main__about-me--off">
+        <div class="main__about-me--on">
             <div class="about-me__text">
                 <h2>about me</h2>
                 <br>
@@ -80,81 +80,93 @@
 
         <div class="main__skills--on">
             <h1>skills</h1>
+            <hr>
             
-            <ul>
-                <li>
-                    <a href="assets/HTML_5_logo.png"></a>
+            <div class="skills__top-skills">
+                <span class="top-skills__html">
+                    <img src="assets/HTML_5_logo.png" alt="">
                     <p>HTML</p>
-                </li>
-                <li>
-                    <a href="assets/CSS_logo.png"></a>
+                </span>
+                <span class="top-skills__css">
+                    <img src="assets/CSS_logo.png" alt="">
                     <p>Css</p>
-                </li>
-                <li>
-                    <a href="assets/JS_logo.png"></a>
+                </span>
+                <span class="top-skills__js">
+                    <img src="assets/JS_logo.png" alt="">
                     <p>Java Script</p>
-                </li>
-                <li>
-                    <a href="assets/GitHub logo.svg"></a>
+                </span>
+            </div>
+            <div class="skills__bottom-skills">
+                <span class="bottom-skills__github">
+                    <img src="assets/GitHub logo.svg" alt="">
                     <p>GitHub</p>
-                </li>
-                <li>
-                    <a href="assets/php logo.png"></a>
-                </li>
-                <li>
-                    <a href="assets/MySQL logo.png"></a>
-                </li>
-            </ul>
+                </span>
+                <span class="bottom-skills__php">
+                    <img src="assets/php logo.png" alt="">
+                </span>
+                <span class="bottom-skills__mysql">
+                    <img src="assets/MySQL logo.png" alt="">
+                </span>
+            </div>
         </div>
 
-        <div class="main__portfolio--off">
+        <div class="main__portfolio--on">
             <h1>portfolio</h1>
-
-            <span></span>
+            <br>
+            <hr>
             <ul>
                 <li>
-                    <a href="#"></a>
-                    <div>
+                    <a href="#"> <img src="#" alt=""></a>
+                    <div class="li__details">
                         <h3>22/02 - 03/03/2023 | HETIC Montreuil 93100, Projet Afpa</h3>
+                        <br>
+                        
 
                         <p>
-                            Refaire le site de l’Afpa en le retravaillant sans trop les dénaturés sur le design
-                            et de faire la page d’accueil du nouveau design.
+                            Refaire le site de l’Afpa en le retravaillant sans trop les dénaturés sur le <br>
+                            design et de faire la page d’accueil du nouveau design. <br> <br>
+                        
+                            - Prendre connaissance du site de l’Afpa et recherche de différente <br>
+                            références de design sur le site dribbble et sur awwwards, récupérer <br>
+                            le logo et les image du site Afpa et ajout des icons avec google fonts; <br><br>
+                        
+                            - Création de plusieurs maquettes du site sur figma et sélection de la
+                            maquette finale; <br> <br>
+                        
+                            - Description du poste sous forme de liste à puces;
                         </p>
                         
-                        <ul>
-                            <li>
-                                Prendre connaissance du site de l’Afpa et recherche de différente
-                                références de design sur le site dribbble et sur awwwards, récupérer
-                                le logo et les image du site Afpa et ajout des icons avec google fonts;
-                            </li>
-                            <li>
-                                Création de plusieurs maquettes du site sur figma et sélection de la
-                                maquette finale;
-                            </li>
-                            <li>
-                                Description du poste sous forme de liste à puces;
-                            </li>
-                        </ul>
                         
                         
                     </div>
                 </li>
+                <span> 
+                    <input type="button">
+                    <input type="button">
+                    <input type="button">
+                </span>
             </ul>
-            <span></span>
+            
         </div>
     </main>
 
-    <footer class="footer">
-        <h1>contact me</h1>
-        <a href="mailto:daistephane5@gmail.com">My email</a>
-        <a href="https://www.linkedin.com/in/st%C3% A9phane-dai-7083351b6/">My likedin</a>
-
-        <form action="post">
-            <input type="email" placeholder="Email :">
-            <input type="text" placeholder="Object :">
-            <input type="text" placeholder="Message :">
-        </form>
+    <footer>
+        <div class="footer__contact-me--on">
+            <h1>contact me</h1>
+            <br>
+            <hr>
+            <div class="contact-me__content">
+                <div class="contact-me__link">
+                    <a href="mailto:daistephane5@gmail.com">My email <img src="assets/mail_FILL0_wght400_GRAD0_opsz24.png" alt=""></a><br>
+                    <a href="https://www.linkedin.com/in/stéphane-dai-7083351b6/">likedin <img src="assets/linkedin.svg" alt=""></a>
+                </div>
+                <form action="post">
+                    <input class="form__email" type="email" placeholder="Email :">
+                    <input class="form__objet" type="text" placeholder="Object :">
+                    <input class="form__message" type="text" placeholder="Message :">
+                </form>
+            </div>
+        </div>
 
     </footer>
 </body>
