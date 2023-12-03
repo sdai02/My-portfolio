@@ -4,63 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-    
-    <header>
-        <span>developer</span>
-        <nav>
-            <a href="#"> 
-                <img src="assets/logo.svg" alt="">
-            </a>
-            <div> 
-                <a href="#">about me</a>
-                <a href="#">skills</a>
-                <a href="#">portfolio</a>
-                <a href="#">contact</a>
-            </div>
-            
-        </nav>
-
+    <nav class="body__nav">
+        <a href="#"><img src="assets/logo.svg" alt=""></a>
+        <div class="nav__button"> 
+            <a href="#">about me</a>
+            <a href="#">skills</a>
+            <a href="#">portfolio</a>
+            <a href="#">contact</a>
+        </div>
+        
+    </nav>
+    <header class="body__header--is-off">
+        <span class="header__background">developer</span>
         <h1>Hello, I'm a Front end Developer   </h1>
         <span></span>
     </header>
 
     <main>
-        <div>
-            <h2>about me</h2>
+        <div class="main__about-me">
+            <div class="about-me__text">
+                <h2>about me</h2>
+                <br>
+                <hr>
+                
+                <div class="text__content">
+                    <p>
+                        My name is <span>Dai Stéphane</span>. <br><br>
+                    
+                        Before to became a <span>front end <br>
+                        developer</span>, i worked in vegan <br>
+                        restaurant as cooker. But now <br>
+                        i became à student at HETIC. <br> <br>
+
+
+                        My <span>hobbies</span> other the code <br>
+                        for a website, i like to play <br>
+                        a video game and cooking.
+                    </p>
+                </div>
             
-            <div>
-                <p>
-                    My name is <span>Dai Stéphane</span>.
-                </p>
-                <p>
-                    My hobbies other the code for a website, i like to play a video game and cooking
-                </p>
-                <p>
-                    Before to became a <span>front end developer</span>, i worked in vegan restaurant as cooker. But now
-                    i became à student at HETIC.
-                </p>
+            
+                <div class="text__bottom">
+                    <div class="text__education">
+                        <h3>
+                            education
+                        </h3> <br>
+                        <p>
+                            HETIC,<br>
+                            27 Bis Rue du Progrès,<br>
+                            93100 Montreuil
+                        </p>
+                    </div>
+                    <div class="text__country">
+                        <h3>country</h3> <br>
+                        <p>
+                            france, pantin
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h2>
-                    education
-                </h2>
-                <p>
-                    HETIC,<br>
-                    27 Bis Rue du Progrès,<br>
-                    93100 Montreuil
-                </p>
-            </div>
-            <div>
-                <div>
+            <div class="about-me__background">
+                <div class="photo__forground">
                     <img src="assets/photo.png" alt="">
                 </div>
         
             </div>
         </div>
 
-        <div>
+        <div class="main__skills--off">
             <h1>skills</h1>
             
             <ul>
@@ -89,7 +107,7 @@
             </ul>
         </div>
 
-        <div>
+        <div class="main__portfolio--off">
             <h1>portfolio</h1>
 
             <span></span>
@@ -127,7 +145,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="footer">
         <h1>contact me</h1>
         <a href="mailto:daistephane5@gmail.com">My email</a>
         <a href="https://www.linkedin.com/in/st%C3% A9phane-dai-7083351b6/">My likedin</a>
