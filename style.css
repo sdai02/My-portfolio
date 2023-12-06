@@ -3,7 +3,7 @@ body{
     font-family: 'Inter', sans-serif;
     background: #F1F4C6;
     margin-left: 128px;
-   
+  
     
 }
 
@@ -19,11 +19,15 @@ body{
     position: fixed;
     top: 0;
     z-index: 1;
-    width: 1092px;
+    width: 1093px;
     background-color: transparent;
-    border-bottom: 2px solid #C5BA8D ;
+    
     margin-left: 128px;
     margin-right: 128px;
+    transition: background-color 0.5s ease;
+}
+.body__nav--scroll{
+    border-bottom: 2px solid #C5BA8D ;
 }
 
 nav a img{
@@ -61,7 +65,8 @@ nav a img{
 }
 
 .body__header--on{
-    opacity: 1;;
+    opacity: 1;
+    margin-bottom: 128px;
 }
 
 .header__background{
@@ -74,6 +79,7 @@ nav a img{
     left: -3%;
     background-color: transparent;
     color: hsla(48, 33%, 66%, 0.15);
+    position: fixed;
 
 
     font-family: Inter;
@@ -96,6 +102,10 @@ header h1{
     line-height: normal;
     background: none;
     
+}
+
+main{
+    background-color:  #F1F4C6;
 }
 
 .main__about-me--off{
@@ -509,8 +519,9 @@ header h1{
     border-radius: 5px;
     border: 0;
     background: #D9D9D9;
-    margin-bottom: 56px;
+    margin-bottom: 45px;
     margin-top: 32px;
+    padding-left: 15px;
 }
 
 .form__objet{
@@ -518,12 +529,16 @@ header h1{
     height: 48px;
     background: #D9D9D9;
     border: 0;
-    margin-bottom: 56px;
+    margin-bottom: 45px;
+    padding-left: 15px;
 }
 
 .form__message{
     width: 464px;
-    height: 160px;
     background: #D9D9D9;
     border: 0;
+    margin-bottom: 30px;
+    padding-top: 11px;
+    padding-bottom: 125px;
+    padding-left: 15px;
 }
