@@ -8,8 +8,6 @@ body{
 }
 
 
-
-
 body{
     position: relative;
 }
@@ -17,33 +15,35 @@ body{
 .body__nav {
     display: flex;
     position: fixed;
+    padding-left: 117px;
     top: 0;
     z-index: 1;
-    width: 1093px;
+    width: 100%;
     background-color: transparent;
     
-    margin-left: 128px;
-    margin-right: 128px;
     transition: background-color 0.5s ease;
 }
 .body__nav--scroll{
-    border-bottom: 2px solid #C5BA8D ;
+    background-color: #f1f4c6be ;
+
 }
 
-nav a img{
+.button__navigation{
+    padding-top: 36px;   
+}
+
+.button__logo{
+    padding-right: 202px;
+}
+.button__logo a img{
     margin-top: 15px;
-    width: 50px;
-    margin-bottom:15px ;
+    width: 80px;
+    margin-bottom:5px ;
 }
 
-.nav__button{
-    margin-left: 202px;
-    padding-top: 25px;
-    width: 100%;
-    
-}
 
-.nav__button a {
+
+.button__navigation a {
     color: #837D7D;
     font-family: Inter;
     font-size: 25px;
@@ -53,9 +53,10 @@ nav a img{
     text-decoration: none;
     text-transform: uppercase;
     margin-right: 24px;
+    
 }
 
-.nav__button a:hover{
+.button__navigation a:hover{
     color: #C5BA8D;
     transition: 0.5s;
 }
@@ -389,19 +390,34 @@ main{
     border: 0;
     margin-left: 249px;
 }
-
-.main__portfolio--on ul li{
-    margin: 0 auto;
-    width: 757px;
-    height: 317px;
-    background-color: aqua;
-}
-
 .main__portfolio--on ul{
     margin-bottom: 168px;
     margin-top: 40px;
+    position: relative;
 }
 
+.main__portfolio--on ul img{
+    object-fit: cover;
+    width: 757px;
+    height: 317px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.main__portfolio--on ul li a{
+    text-decoration: none;
+    z-index: 1;
+    
+}
+.li__details{
+     width: 757px;
+    height: 317px;
+    position: absolute;
+    top: 0;
+    right: 22%;
+}
 .li__details h3{
     margin-top: 5px;
     margin-left: 14px;
@@ -426,6 +442,9 @@ main{
 
 .li__details:hover{
     opacity: 1;
+    width: 757px;
+    height: 317px;
+    background-color: hsla(48, 33%, 66%, 0.5);
     transition: 0.25s;
 }
 .main__portfolio--on ul span{
@@ -499,7 +518,6 @@ main{
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
-    text-transform: capitalize; 
     display: block;  
 }
 
