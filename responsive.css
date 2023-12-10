@@ -1,0 +1,98 @@
+@media screen and (max-width: 480px){
+    
+    .navigation__about-me{
+        transition: 0.5s;
+        display: none;
+    }
+    .navigation__skills{
+        transition: 0.5s;
+        display: none;
+    }
+    .navigation__portfolio{
+        transition: 0.5s;
+        display: none;
+    }
+    .navigation__contact{
+        transition: 0.5s;
+        display: none;
+    }
+    .button__menu{
+        opacity: 1;
+        transition: 0.5s;
+    }
+    .body__header h1{
+        font-size: 45px;
+    }
+    .header__background{
+        font-size: 100px;
+    }
+
+    .main__about-me h2{
+        font-size: 32px;
+    }
+    .main__about-me hr{
+        margin-left: 15.14%;
+        width: 32.72%;
+    }
+    .text__content{
+        margin-left: 0%;
+    }
+    .text__bottom{
+        display: block;
+    }
+    .main__about-me{
+        flex-wrap: wrap-reverse;
+    }
+
+
+
+    .main__skills h1{
+        font-size: 45px;
+    }
+    .main__skills hr{
+        width: 19.15%;
+        margin-left: 23.19%;
+    }
+
+    .skills__top-skills{
+        display: grid; 
+    }
+    .skills__top-skills span{
+        margin: 10px;
+    }
+    .skills__bottom-skills{
+        flex-wrap: wrap;
+    }
+    .skills__bottom-skills span{
+        margin: 10px;
+    }
+
+
+    .main__portfolio h1{
+        font-size: 45px;
+    }
+    .li__details{
+        font-size: 12px;
+    }
+    .carousel__button-right{
+        margin-top: 30%;
+    }
+    .carousel__button-left{
+        margin-top: 30%;
+    }
+    .footer__contact h1{
+        font-size: 45px;
+    }
+    .footer__contact hr{
+        margin-left: 25.45%;
+    }
+    .contact__link span{
+        flex-wrap: wrap;
+        width: 30.6%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    
+}
+

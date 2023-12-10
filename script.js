@@ -20,4 +20,4 @@ $project_one.addEventListener('click', function(event){
 $linkedin.addEventListener('click', function(event){
     event.preventDefault();
     window.open('https://www.linkedin.com/in/stéphane-dai-7083351b6/');
-})
+});

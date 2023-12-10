@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="responsive.css">
   </head>
   <body>
     <nav class="body__nav">
@@ -18,23 +19,30 @@
             <img src="assets/logo.png" alt="">
           </a>
         </div>
-      
         <div class="button__navigation">
-          <a href="#">about me</a>
-          <a href="#">skills</a>
-          <a href="#">portfolio</a>
-          <a href="#">contact</a>
+          <a href="#about-me" class="navigation__about-me">about me</a>
+          <a href="#skills" class="navigation__skills">skills</a>
+          <a href="#portfolio" class="navigation__portfolio">portfolio</a>
+          <a href="#contact" class="navigation__contact">contact</a>
+        </div>
+        <div class="button__menu">
+          <img src="assets/Hamburger_icon.png" alt="">
+          <ul class="menu">
+            <li class="menu__about-me"><a href="#about-me">about me</a></li>
+            <li class="menu__skills"><a href="#skills">skills</a></li>
+            <li class="menu__portfolio"><a href="#portfolio">portfolio</a></li>
+            <li class="menu__contact-me"><a href="#contact">contact me</a></li>
+          </span>
         </div>
       </div>
       
     </nav>
-    <header class="body__header--on">
+    <header class="body__header">
       <span class="header__background">developer</span>
-      <h1>Hello, I'm a Front end Developer </h1>
-      <span></span>
+      <h1>Hello, I'm a Front end Developer</h1>
     </header>
     <main>
-      <div class="main__about-me--on">
+      <div class="main__about-me" id="about-me">
         <div class="about-me__text">
           <h2>about me</h2>
           <br>
@@ -64,7 +72,7 @@
           </div>
         </div>
       </div>
-      <div class="main__skills--on">
+      <div class="main__skills" id="skills">
         <h1>skills</h1>
         <hr>
         <div class="skills__top-skills">
@@ -94,17 +102,15 @@
           </span>
         </div>
       </div>
-      <div class="main__portfolio--on">
+      <div class="main__portfolio" id="portfolio">
         <h1>portfolio</h1>
         <br>
         <hr>
-        <ul>
-          <img src="assets/project_one.png" alt="">
-          <li>
-            
+        <ul class="portfolio__carousel">
+          <button class="carousel__button-left"><img src="assets/chevron_right.png" alt=""></button>
+          <li class="carousel__li">
+            <img src="assets/project_one.png" alt="">
             <a href="#" id="li__project-one">
-              
-            
               <div class="li__details">
                 <h3>22/02 - 03/03/2023 | HETIC Montreuil 93100, Projet Afpa</h3>
                 <br>
@@ -116,31 +122,54 @@
               </div>
             </a>
           </li>
-          <span>
-            <input type="button">
-            <input type="button">
-            <input type="button">
-          </span>
+          <li class="carousel__li--off">
+            <img src="assets/project_one.png" alt="">
+            <a href="#" id="li__project-two">
+              <div class="li__details">
+                <h3>22/02 - 03/03/2023 | HETIC Montreuil 93100, Projet Afpa</h3>
+                <br>
+                <p> Refaire le site de l’Afpa en le retravaillant sans trop les dénaturés sur le <br> design et de faire la page d’accueil du nouveau design. <br>
+                  <br> - Prendre connaissance du site de l’Afpa et recherche de différente <br> références de design sur le site dribbble et sur awwwards, récupérer <br> le logo et les image du site Afpa et ajout des icons avec google fonts; <br>
+                  <br> - Création de plusieurs maquettes du site sur figma et sélection de la maquette finale; <br>
+                  <br> - Description du poste sous forme de liste à puces;
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="carousel__li--off">
+            <img src="assets/project_three.png" alt="">
+            <a href="#" id="li__project-three">
+              <div class="li__details">
+                <h3>22/02 - 03/03/2023 | HETIC Montreuil 93100, Projet Afpa</h3>
+                <br>
+                <p> Refaire le site de l’Afpa en le retravaillant sans trop les dénaturés sur le <br> design et de faire la page d’accueil du nouveau design. <br>
+                  <br> - Prendre connaissance du site de l’Afpa et recherche de différente <br> références de design sur le site dribbble et sur awwwards, récupérer <br> le logo et les image du site Afpa et ajout des icons avec google fonts; <br>
+                  <br> - Création de plusieurs maquettes du site sur figma et sélection de la maquette finale; <br>
+                  <br> - Description du poste sous forme de liste à puces;
+                </p>
+              </div>
+            </a>
+          </li>
+          <button class="carousel__button-right"><img src="assets/chevron_right.png" alt=""></button>
         </ul>
+
       </div>
     </main>
     <footer>
-      <div class="footer__contact-me--on">
-        <h1>contact me</h1>
+      <div class="footer__contact" id="contact">
+        <h1>contact</h1>
         <br>
         <hr>
-        <div class="contact-me__content">
-          <div class="contact-me__link">
-            <a href="mailto:daistephane5@gmail.com">My email : <span>daistephane5@gmail.com</span></a>
+        <div class="contact__content">
+          <div class="contact__link">
+            <span>
+              <p>My email :</p><a href="mailto:daistephane5@gmail.com"> daistephane5@gmail.com</a>
+            </span>
             <br>
             <a href="#" id="link__linkedin">Linkedin 
             </a>
           </div>
-          <form action="post">
-            <input class="form__email" type="email" placeholder="Email :">
-            <input class="form__objet" type="text" placeholder="Object :">
-            <input class="form__message" type="text" placeholder="Message :" >
-          </form>
+          
         </div>
       </div>
     </footer>

@@ -2,8 +2,6 @@ body{
     box-sizing: content-box;
     font-family: 'Inter', sans-serif;
     background: #F1F4C6;
-    margin-left: 128px;
-  
     
 }
 
@@ -12,15 +10,15 @@ body{
     position: relative;
 }
 
+/* nav-bar */
+
 .body__nav {
     display: flex;
     position: fixed;
-    padding-left: 117px;
     top: 0;
     z-index: 1;
     width: 100%;
     background-color: transparent;
-    
     transition: background-color 0.5s ease;
 }
 .body__nav--scroll{
@@ -29,19 +27,40 @@ body{
 }
 
 .button__navigation{
-    padding-top: 36px;   
+    padding-top: 53px;
+    width: 46.35%;
+    margin-right: 5%;
 }
+
 
 .button__logo{
-    padding-right: 202px;
+    display: block;
+    width: 120px;
+    margin-left: 8.5%;
+    margin-right: 15%;
 }
+
+
 .button__logo a img{
     margin-top: 15px;
-    width: 80px;
+    width: 100%;
     margin-bottom:5px ;
+    margin-right: 15.02%;
 }
 
+.button__menu{
+    opacity: 0;
+}
 
+.button__menu{
+    margin-top: 19px;
+    margin-right: 9.48%;
+}
+.button__menu img{
+    width: 69px;
+    
+
+}
 
 .button__navigation a {
     color: #837D7D;
@@ -52,8 +71,7 @@ body{
     line-height: normal;
     text-decoration: none;
     text-transform: uppercase;
-    margin-right: 24px;
-    
+    margin-right: 3%;
 }
 
 .button__navigation a:hover{
@@ -61,17 +79,44 @@ body{
     transition: 0.5s;
 }
 
-.body__header--off{
+.menu{
     display: none;
 }
 
-.body__header--on{
-    opacity: 1;
-    margin-bottom: 128px;
+.menu__about-me{
+    display: none;
+}
+.menu__skills{
+    display: none;
+}
+
+.menu li{
+    color: #837D7D;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 3%;
+}
+.menu li:hover{
+    color: #C5BA8D;
+    transition: 0.5s;
+}
+
+/* header */
+
+
+
+.body__header{
+    margin-bottom: 215px;
+    
 }
 
 .header__background{
-    
+
     box-sizing: content-box;
     transform: rotate(-24.486deg);
     flex-shrink: 0;
@@ -91,9 +136,9 @@ body{
     text-transform: uppercase;
 }
 
-header h1{
+.body__header h1{
     margin-top: 210px;
-    margin-left: 128px;
+    margin-left: 9.37%;
 
     color: #C5BA8D;
     font-family: Inter;
@@ -102,25 +147,26 @@ header h1{
     font-weight: 700;
     line-height: normal;
     background: none;
-    
+
 }
+
+/* main */
 
 main{
     background-color:  #F1F4C6;
 }
 
-.main__about-me--off{
-    display: none;
-}
+/* about me */
 
-.main__about-me--on{
-    margin-left: 128px;
+.main__about-me{
+    padding-top: 17px;
+    margin-left: 9.37%;
     display: flex;
     justify-content: space-between;
 }
 
 
-.main__about-me--on h2{
+.main__about-me h2{
     margin-top: 100px;
     text-transform: uppercase;
 
@@ -131,18 +177,19 @@ main{
     font-weight: 700;
     line-height: normal;
 }
-.main__about-me--on hr{
-    width: 223px;
+.main__about-me hr{
+    width: 64.72%;
     height: 16px;
     border: 0;
     background-color: hsla(48, 33%, 66%, 1);
-    margin-left: 117px;
+    margin-left: 29.14%;
+    border-radius: 5px;
 }
 .about-me__background{
-    width: 339px;
-    height: 513px;
+    width: 322px;
+    height: 400px;
     margin-top: 143px;
-    margin-right: 128px ;
+    margin-right: 10.46% ;
     border: hsla(48, 33%, 66%, 1) 24px solid;
     border-radius: 5px;
     position: relative;
@@ -153,15 +200,21 @@ main{
     border-radius: 5px;
     background: #837D7D;
     transform: translate( -15%,-9%);
-    width: 344px;
-    height: 511px;
+    width: 88.91%;
+    height: 411px;
 }
 
+.photo__forground img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
 
 .text__content{
     margin-top: 20px;
-    margin-left: 117px;
-
+    margin-left: 29.14%;
+    width: 360px;
     color: #000;
     font-family: Inter;
     font-size: 20px;
@@ -180,7 +233,7 @@ main{
 }
 
 .text__education{
-    margin-top: 26px;
+    margin-top: 20px;
 }
 
 .text__education h3{
@@ -226,15 +279,13 @@ main{
 }
 
 
-.main__skills--off{
-    display: none;
+/* skills */
+
+.main__skills{
+    padding-top: 11px;
 }
 
-.main__skills--on{
-    opacity: 1;
-}
-
-.main__skills--on h1{
+.main__skills h1{
     color: #C5BA8D;
     font-family: Inter;
     font-size: 70px;
@@ -242,34 +293,36 @@ main{
     font-weight: 700;
     line-height: normal;
     margin-top: 100px;
-    margin-left: 129px;
+    margin-left: 9.56%;
     text-transform: uppercase;
 }
-.main__skills--on hr{
-    width: 137px;
+.main__skills hr{
+    width: 10.15%;
     height: 16px;
-    margin-left: 232px;
+    margin-left: 17.19%;
     background-color: #C5BA8D;
     border: 0;
+    border-radius: 5px;
 }
 
 .skills__top-skills {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 63%;
     margin-top: 31px;
+    
 }
 .skills__top-skills span{
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     border-radius: 5px;
     background: #D9D9D9;
 }
-.top-skills__html{
-    margin-right: 135px;
-}
+
 .top-skills__html img{
     width: 50%;
-    margin-top: 40px; 
+    margin-top: 40px;
     margin-left: 40px;
 }
 
@@ -282,14 +335,11 @@ main{
     font-weight: 700;
     line-height: normal;
 }
-.top-skills__css{
-    margin-right: 135px;
-}
 
 .top-skills__css img{
     width: 45%;
-    margin-top: 40px; 
-    margin-left: 45px;
+    margin-top: 35px;
+    margin-left: 43px;
 }
 
 .top-skills__css p{
@@ -304,8 +354,9 @@ main{
 
 .top-skills__js img{
     width: 45%;
-    margin-top: 41px; 
-    margin-left: 41px;
+    margin-top: 41px;
+    margin-left: 27%;
+    
 }
 
 .top-skills__js p{
@@ -320,21 +371,21 @@ main{
 
 .skills__bottom-skills{
     display: flex;
-    justify-content: center;
-    margin-top: 70px;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 63%;
+    margin-top: 31px;
 }
 
 
 .skills__bottom-skills span{
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     border-radius: 5px;
     background: #D9D9D9;
 }
 
-.bottom-skills__github{
-    margin-right: 135px;
-}
+
 .bottom-skills__github p{
     color: #000;
     text-align: center;
@@ -347,32 +398,32 @@ main{
 
 .bottom-skills__github img{
     width: 45%;
-    margin-top: 41px; 
-    margin-left: 45px;
+    margin-top: 41px;
+    margin-left: 42px;
 }
 
 
-.bottom-skills__php {
-    margin-right: 135px;
-}
+
 
 .bottom-skills__php img{
     width: 70%;
-    margin-top: 41px; 
+    margin-top: 41px;
     margin-left: 25px;
 }
 .bottom-skills__mysql img{
     width: 70%;
-    margin-top: 41px; 
+    margin-top: 41px;
     margin-left: 25px;
 }
 
 
-.main__portfolio--off{
-    display: none;
+
+.main__portfolio{
+    padding-top: 2%;
+    padding-bottom: 12%;
 }
 
-.main__portfolio--on h1{
+.main__portfolio h1{
     color: #C5BA8D;
     font-family: Inter;
     font-size: 60px;
@@ -380,43 +431,55 @@ main{
     font-weight: 700;
     line-height: normal;
     margin-top: 100px;
-    margin-left: 128px;
+    margin-left: 9.48%;
     text-transform: uppercase;
 }
-.main__portfolio--on hr{
-    width: 223px;
+.main__portfolio hr{
+    width: 16.53%;
     height: 16px;
     background-color: #C5BA8D;
     border: 0;
-    margin-left: 249px;
+    margin-left: 18.45%;
+    border-radius: 5px;
 }
-.main__portfolio--on ul{
+.main__portfolio ul{
     margin-bottom: 168px;
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+.carousel__li{
     position: relative;
 }
 
-.main__portfolio--on ul img{
-    object-fit: cover;
-    width: 757px;
+.carousel__li--off{
+    display: none;
+}
+.carousel__li img{
+    
+    width: 100%;
     height: 317px;
     display: block;
-    margin: 0 auto;
+    border-radius: 5px;
+    object-fit: cover;
 }
 
 
 
-.main__portfolio--on ul li a{
+.carousel__li a{
     text-decoration: none;
     z-index: 1;
-    
+
 }
 .li__details{
-     width: 757px;
+    width: 100%;
     height: 317px;
     position: absolute;
-    top: 0;
-    right: 22%;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .li__details h3{
     margin-top: 5px;
@@ -427,13 +490,13 @@ main{
     margin-left: 14px;
 }
 .li__details{
-    color: #000;
+    color: #000;;
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    
+
 }
 
 .li__details{
@@ -442,39 +505,60 @@ main{
 
 .li__details:hover{
     opacity: 1;
-    width: 757px;
-    height: 317px;
-    background-color: hsla(48, 33%, 66%, 0.5);
+    background-color: hsl(47, 33%, 66%);
     transition: 0.25s;
+    border-radius: 5px;
 }
-.main__portfolio--on ul span{
-    margin-top: 16px;
-    display: flex;
-    justify-content: center;
-}
-.main__portfolio--on ul span input{
-    margin-right: 10px;
-    width: 14px;
-    height: 14px;
-    border-radius: 14px;
-    background: #D9D9D9;
+
+
+.carousel__button-left{
+    rotate: 180deg;
+    background-color: transparent;
     border: 0;
+    width: 80px;
+    height: 80px;
+    margin-top: 8%;
+    margin-right: 1%;
 }
-.main__portfolio--on ul span input:hover{
+.carousel__button-left:hover{
     background-color: #C5BA8D;
-    transition: 0.25s;
+}
+.carousel__button-left img{
+    width: 75px;
+  
+    
+}
+.carousel__button-right{
+  
+    background-color: transparent;
+    border: 0;
+    width: 80px;
+    height: 80px;
+    margin-top: 8%;
+    margin-left: 1%;
+}
+.carousel__button-right img{
+    width: 75px;
+   
+    
 }
 
-.footer__contact-me--off{
-    opacity: 0;
+.carousel__button-right:hover{
+    background-color: #C5BA8D;
 }
-.footer__contact-me--on{
+
+/* footer */
+
+.footer__contact{
     opacity: 1;
+    background-color: #f1f4c6be;
+    padding-bottom: 12%;
+
 }
 
-.footer__contact-me--on h1{
-    margin-top: 100px;
-    margin-left: 128px;
+.footer__contact h1{
+    padding-top: 100px;
+    margin-left: 9.48%;
     text-transform: uppercase;
     color: #C5BA8D;
     font-family: Inter;
@@ -484,33 +568,31 @@ main{
     line-height: normal;
 }
 
-.footer__contact-me--on hr{
-    width: 343px;
+.footer__contact hr{
+    width: 16.60%;
     height: 16px;
     background: #C5BA8D;
     border: 0;
-    margin-left: 249px;
-}
-.contact-me__content{
-    display: flex;
-    
-    
-    
+    margin-left: 18.45%;
+    border-radius: 5px;
 }
 
-.contact-me__link{
-    width: 599px;
+
+.contact__link{
+    width: 59.48%;
     height: 28px;
-    margin-top: 144px;
+    margin-top: 100px;
     margin-bottom: 100px;
-    margin-left: 128px;
+    margin-left: 9.48%;
 }
-.contact-me__link a img{
+.contact__link a img{
     width: 20px;
     margin-right: 5px;
 }
-
-.contact-me__link a{
+.contact__link span{
+    display:flex;
+}
+.contact__link span p{
     color: #C5BA8D;
     font-family: Inter;
     font-size: 25px;
@@ -518,45 +600,25 @@ main{
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
-    display: block;  
+    margin-right: 10px;
 }
-
-.contact-me__content form input{
+.contact__link span a{
+    color: #837D7D;
+    text-decoration: none;
+}
+.contact__link span a:hover{
+    color: #C5BA8D;
+    transition: 0.5s;
+}
+.contact__link a{
     color: #C5BA8D;
     font-family: Inter;
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-left: 398px;
+    text-decoration: none;
 }
 
-.form__email{
-    width: 464px;
-    height: 48px;
-    border-radius: 5px;
-    border: 0;
-    background: #D9D9D9;
-    margin-bottom: 45px;
-    margin-top: 32px;
-    padding-left: 15px;
-}
 
-.form__objet{
-    width: 464px;
-    height: 48px;
-    background: #D9D9D9;
-    border: 0;
-    margin-bottom: 45px;
-    padding-left: 15px;
-}
 
-.form__message{
-    width: 464px;
-    background: #D9D9D9;
-    border: 0;
-    margin-bottom: 30px;
-    padding-top: 11px;
-    padding-bottom: 125px;
-    padding-left: 15px;
-}
