@@ -55,6 +55,7 @@ body{
 .button__menu{
     margin-top: 19px;
     margin-right: 9.48%;
+    position: relative;
 }
 .button__menu img{
     width: 69px;
@@ -72,14 +73,17 @@ body{
     text-decoration: none;
     text-transform: uppercase;
     margin-right: 3%;
+    text-align: center;
 }
 
 .button__navigation a:hover{
     color: #C5BA8D;
     transition: 0.5s;
 }
-
-.menu{
+.menu li{
+    text-align: center;
+}
+.menu--off{
     display: none;
 }
 
@@ -89,19 +93,31 @@ body{
 .menu__skills{
     display: none;
 }
+.menu__portfolio{
+    display: none;
+}
+.menu__contact-me{
+    display: none;
+}
 
-.menu li{
+.menu {
+    position: absolute;
+    width: 476px;
+    left: -525%;
+    background-color: #f1f4c6be;
+    top: 100%;
+}
+.menu li a{
     color: #837D7D;
     font-family: Inter;
-    font-size: 25px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
     text-transform: uppercase;
-    margin-right: 3%;
 }
-.menu li:hover{
+.menu li a:hover{
     color: #C5BA8D;
     transition: 0.5s;
 }
@@ -139,7 +155,7 @@ body{
 .body__header h1{
     margin-top: 210px;
     margin-left: 9.37%;
-
+    margin-right: 9.37%;
     color: #C5BA8D;
     font-family: Inter;
     font-size: 90px;
@@ -177,18 +193,12 @@ main{
     font-weight: 700;
     line-height: normal;
 }
-.main__about-me hr{
-    width: 64.72%;
-    height: 16px;
-    border: 0;
-    background-color: hsla(48, 33%, 66%, 1);
-    margin-left: 29.14%;
-    border-radius: 5px;
-}
+
 .about-me__background{
     width: 322px;
     height: 400px;
     margin-top: 143px;
+    margin-left: 35px;
     margin-right: 10.46% ;
     border: hsla(48, 33%, 66%, 1) 24px solid;
     border-radius: 5px;
@@ -296,14 +306,7 @@ main{
     margin-left: 9.56%;
     text-transform: uppercase;
 }
-.main__skills hr{
-    width: 10.15%;
-    height: 16px;
-    margin-left: 17.19%;
-    background-color: #C5BA8D;
-    border: 0;
-    border-radius: 5px;
-}
+
 
 .skills__top-skills {
     display: flex;
@@ -434,14 +437,7 @@ main{
     margin-left: 9.48%;
     text-transform: uppercase;
 }
-.main__portfolio hr{
-    width: 16.53%;
-    height: 16px;
-    background-color: #C5BA8D;
-    border: 0;
-    margin-left: 18.45%;
-    border-radius: 5px;
-}
+
 .main__portfolio ul{
     margin-bottom: 168px;
     margin-top: 40px;
@@ -568,14 +564,6 @@ main{
     line-height: normal;
 }
 
-.footer__contact hr{
-    width: 16.60%;
-    height: 16px;
-    background: #C5BA8D;
-    border: 0;
-    margin-left: 18.45%;
-    border-radius: 5px;
-}
 
 
 .contact__link{
@@ -601,6 +589,8 @@ main{
     line-height: normal;
     text-decoration: none;
     margin-right: 10px;
+    display: block;
+
 }
 .contact__link span a{
     color: #837D7D;
