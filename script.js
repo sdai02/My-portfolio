@@ -30,24 +30,6 @@ windowOpen($project_two,'https://github.com/Aboubakar2004/Projet_Site_Location/t
 windowOpen($project_three,'https://6575c824ce77752fcddb564c--majestic-zuccutto-8ada61.netlify.app/')
 windowOpen($linkedin,'https://www.linkedin.com/in/stéphane-dai-7083351b6/')
 
-// $project_one.addEventListener('click', function(event){
-//     event.preventDefault();
-//     window.open('https://lucent-sundae-056ed6.netlify.app/','_blank');
-//  });
-
-// $project_two.addEventListener('click', function(event){
-//     event.preventDefault();
-//     window.open('https://github.com/Aboubakar2004/Projet_Site_Location/tree/st%C3%A9phane','_blank');
-// });
-
-// $project_three.addEventListener('click', function(event){
-//     event.preventDefault();
-//     window.open('https://6575c824ce77752fcddb564c--majestic-zuccutto-8ada61.netlify.app/','_blank');
-// });
-// $linkedin.addEventListener('click', function(event){
-//     event.preventDefault();
-//     window.open('https://www.linkedin.com/in/stéphane-dai-7083351b6/');
-// });
 
 
 
