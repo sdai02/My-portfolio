@@ -6,8 +6,8 @@ var $linkedin = document.getElementById('link__linkedin');
 let $carousel = document.querySelectorAll('.portfolio__carousel li');
 let $button_left = document.querySelector('.carousel__button-left');
 let $button_right = document.querySelector('.carousel__button-right');
-let $button__menu = document.getElementById('button__menu');
-let $menu = document.getElementById('menu');
+let $button__menu = document.querySelector('.button__menu');
+let $menu = document.querySelector('.button__menu ul');
 
 window.addEventListener('scroll', function(){
 
@@ -25,10 +25,10 @@ let windowOpen= (element, url) =>{
         window.open(url,'_blank');
     }
 }
-windowOpen($project_one,'https://lucent-sundae-056ed6.netlify.app/')
-windowOpen($project_two,'https://github.com/Aboubakar2004/Projet_Site_Location/tree/st%C3%A9phane')
-windowOpen($project_three,'https://6575c824ce77752fcddb564c--majestic-zuccutto-8ada61.netlify.app/')
-windowOpen($linkedin,'https://www.linkedin.com/in/stéphane-dai-7083351b6/')
+windowOpen($project_one,'https:lucent-sundae-056ed6.netlify.app/')
+windowOpen($project_two,'https:github.com/Aboubakar2004/Projet_Site_Location/tree/st%C3%A9phane')
+windowOpen($project_three,'https:6575c824ce77752fcddb564c--majestic-zuccutto-8ada61.netlify.app/')
+windowOpen($linkedin,'https:www.linkedin.com/in/stéphane-dai-7083351b6/')
 
 
 
@@ -85,13 +85,15 @@ let menuOff = (off) => {
 }
 
 
-$on = 0;
-$button__menu.addEventListener('click',function(){
-    if($on == 0){
+ $on = 0;
+ $button__menu.addEventListener('click',function(){
+     if($on == 0){
         $on += 1;
         menuOn()
-    }else{
+     }else{
         $on -= 1;
         menuOff()
     }
 })
+
+
